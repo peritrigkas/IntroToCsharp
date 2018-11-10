@@ -23,12 +23,18 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
             Empolyee e1 = new Empolyee();
             e1.Name = " Peri ";
 
             Empolyee e2 = new Empolyee();
             e2.Name = " Trigkas ";
             Output.Text = e1.Name + " " + e2.Name;
+
         }
     }
 }
