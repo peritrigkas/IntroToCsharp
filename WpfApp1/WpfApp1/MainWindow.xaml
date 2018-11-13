@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="705">
-    <Grid Margin="10,0,0,-21" RenderTransformOrigin="0.503,0.437" HorizontalAlignment="Left" Width="780">
-        <TextBox HorizontalAlignment="Left" Height="44" Margin="202,204,0,0" Name="Output" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="267"/>
-    </Grid>
+        Title="MainWindow" Height="450" Width="705" Loaded="MainWindow_Loaded">
+    <Canvas x:Name="DrawingCanvas">
+        <Grid Margin="10,0,0,-21" RenderTransformOrigin="0.569,0.419" HorizontalAlignment="Left" Width="780">
+            <TextBox HorizontalAlignment="Left" Height="44" Margin="202,204,0,0" Name="Output" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="267" />
+        </Grid>
+    </Canvas>
+   
+   
 </Window>
