@@ -11,7 +11,7 @@ namespace CSTypes
     }
     [TestClass]
 
-    public class Study : Revision
+    public class Study 
     {
         [TestMethod]
         public void Work()
