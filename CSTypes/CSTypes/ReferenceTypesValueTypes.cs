@@ -20,19 +20,20 @@ namespace CSTypes
         {
             Invoice invoice = new Invoice();
             invoice.ID = 4;
-            int value = 5;
+            int value ;
 
-            DoWork(invoice, value);
+            DoWork(invoice, out value);
 
-            Assert.IsTrue(invoice.ID == 9);
-            Assert.IsTrue(value == 5);
+            Assert.IsTrue(invoice.ID == 4);
+            Assert.IsTrue(value == 3);
 
         }
 
-        void DoWork (Invoice invoice, int value)
+        void DoWork (Invoice invoice, out int value)
         {
-            invoice.ID = 9;
-            value = 13;
+            invoice = new Invoice();
+            invoice.ID = 5;
+            value = 3;
         }
     
     }
