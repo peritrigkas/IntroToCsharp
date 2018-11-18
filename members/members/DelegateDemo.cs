@@ -17,8 +17,7 @@ namespace members
             _writer += log1.SendMessage;
             _writer += log2.SendMessage;
             _writer += log1.SendMessage;
-
-            _writer = null;
+          
 
         }
 
@@ -27,7 +26,7 @@ namespace members
             _writer("Doing some work");
         }
 
-        public WriteMessage _writer;
+       public WriteMessage _writer;
     }
 
     
